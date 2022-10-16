@@ -1,0 +1,11 @@
+Use of templete
+Use of databasa
+User registration
+cookies an session
+hashed password
+full Crud
+- catalog
+-details
+-create
+-edit
+- delete
