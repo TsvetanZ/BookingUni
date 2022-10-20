@@ -15,7 +15,7 @@ module.exports = (app) => {
 
      app.use('/static', express.static('static'));
      app.use(express.urlencoded({extended: true}));
-     app.use(trimBody());
+     app.use(trimBody('password'));
      app.use(cookieParser());
      app.use(session());
 };
