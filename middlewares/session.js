@@ -6,6 +6,8 @@ module.exports = () => (req, res, next) => {
         console.log(token);
         try {
           const userData = verifyToken(token);
+          req.user = userData;
+          res.locals.username = userData.username;   // по този начин го вкарваме в глобалния контекс с res.locals - това го чете тамплеита
           //console.log('Read successul, user', userData.username);
           req.user = userData;
 

@@ -1,11 +1,12 @@
-Use of templete
-Use of databasa
-User registration
-cookies an session
-hashed password
-full Crud
-- catalog
--details
--create
--edit
-- delete
+[]  Use of templete
+[x]  Use of databasa
+[x]  Use of express plugin libaries
+[]  User registration
+[]  cookies an session
+[]  hashed password
+[]  full Crud
+[]  - catalog
+[]  -details
+[]  -create
+[]  -edit
+[]  - delete
