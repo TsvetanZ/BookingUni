@@ -8,7 +8,6 @@ function hasUser () {
     }
 }
 
-
 function isGuest() {
    return (req, res, next) => {
     if(req.user) {

@@ -11,16 +11,9 @@ const userSchema = new Schema({
          required: true,
           unique: true,
           minlength: [3, 'Username must be at last 3 characters'],
-          match: [/^[a-zA-Z0-9]+$/i, 'Username may contain only english letter and numbers' ]
+          match: [/^[a-zA-Z0-9]+$/i, 'Username may contain only english letter and numbers']
         },  
     hashedPassword: {type: String, required:  true}
-});
-
-userSchema.index ({username: 1}, {
-    collation: {
-        locale: 'en',
-        strength: 2
-    }
 });
 
 userSchema.index ({email: 1}, {
@@ -30,7 +23,16 @@ userSchema.index ({email: 1}, {
     }
 });
 
+userSchema.index ({username: 1}, {
+    collation: {
+        locale: 'en',
+        strength: 2
+    }
+});
+
 const User = model('User', userSchema);
 
 module.exports = User;
+
+
 
